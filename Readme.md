@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Илья Хлопкин](https://up.htmlacademy.ru/htmlcss/28/user/64563).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Алипкин](https://htmlacademy.ru/profile/ealipkin).
 
 ---
 
