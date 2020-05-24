@@ -17,27 +17,41 @@
       </ul>
     </nav>
     <ul class="list-of-button">
-      <li><button><img src="img\loupe.svg" alt="Поиск">Поиск</button></li>
-      <li><button><img src="img\entrance.svg" alt="Вход">Вход</button></li>
-      <li><button><img src="img\basket.svg" alt="Корзина">Корзина</button></li>
+      <li>
+        <form class="search" action="index.html" method="post">
+          <input type="search" name="search" value="" placeholder="Крем-брюле">
+          <button type="submit"><img src="img/loupe.svg" alt="Поиск"></button>
+        </form>
+      </li>
+      <li>
+<form class="entrance" action="index.html" method="post">
+  <input type="email" name="login" placeholder="email@example.com">
+  <input type="password" name="password" placeholder="......">
+  <button type="submit"><img src="img/entrance.svg" alt="Вход">Вход</button>
+  <a href="#">Забыли пароль?</a>
+  <a href="#">Новая регистрация</a>
+</form>
+
+      </li>
+      <li><button><img src="img/basket.svg" alt="Корзина">Корзина</button></li>
     </ul>
     <p class="schedule">с 10 до 20, ежедневно</p>
-    <p class="telephon">8 812 450-25-25</p>
+    <a href="tel:+78124502525" class="telephone">8 812 450-25-25</a>
   </header>
   <div class="slider">
     <!--Тут слайдер который пока не знаю как делать-->
     <div class="slide">
-      <img src="#" alt="">
+      <img src="img/creamy-plomb.png" width="647" height="584" alt="">
       <h1>Крем-брюле и пломбир с малиновым джемом</h1>
       <a href="#">Дайте оба!</a>
     </div>
     <div class="slide">
-      <img src="#" alt="">
+      <img src="img/choco-lemon.png" width="644" height="582" alt="">
       <h1>Шоколадный пломбир и лимонный сорбет</h1>
       <a href="#">Дайте оба!</a>
     </div>
     <div class="slide">
-      <img src="#" alt="">
+      <img src="img/plomb-strawberry.png" width="639" height="582" alt="">
       <h1>Пломбир с помадкой и клубничный щербет</h1>
       <a href="#">Дайте оба!</a>
     </div>
@@ -77,7 +91,7 @@
         <a>Сливочное крем-брюле с карамельной подливкой </a>
       </li>
     </ul>
-    <section class="about_shop">
+    <section class="about-shop">
       <h2>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
       <div class="advantage">
         <img src="img/ice-cream.svg" width="49" height="49">
@@ -102,25 +116,23 @@
     </article>
     <!--Тут форма которую сделаю позже-->
     <section class="map">
-      <img src="#" alt="map" width="" height="">
-      <img src="#">
-      <div class="form">
+      <img src="img/map-pin.png" alt="map" width="1200" height="430">
+      <div class="contacts">
         <p>Адрес главного офиса и офлайн-магазина:</p>
         <p>ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
-        <br>
         <p>Для заказов по телефону:</p>
-        <p>8 812 450-25-25</p>
+        <a href="tel:+78124502525">8 812 450-25-25</a>
         <p>(с 10 до 20 ежедневно)</p>
-        <button>Форма обратной связи</button>
+        <button type="button">Форма обратной связи</button>
       </div>
     </section>
   </main>
   <footer>
     <ul class="social-networks">
-      <li><a href="img\fb.svg"><img src="#" width="32" height="32">FB</a></li>
-      <li><a href="img\vk.svg"><img src="#" width="32" height="32">VK</a></li>
-      <li><a href="img\instagram.svg"><img src="#" width="32" height="32">Inst</a></li>
-      <li><a href="img\twitter.svg"><img src="#" width="32" height="32">Twit</a></li>
+      <li><a href="#"><img src="img/fb.svg" width="32" height="32">FB</a></li>
+      <li><a href="#"><img src="img/vk.svg" width="32" height="32">VK</a></li>
+      <li><a href="#"><img src="img/instagram.svg" width="32" height="32">Inst</a></li>
+      <li><a href="#"><img src="img/twitter.svg" width="32" height="32">Twit</a></li>
     </ul>
     <nav class="footer-links">
       <ul class="links">
@@ -135,6 +147,23 @@
       <span>Сделано в HTML Academy © 2019</span>
     </div>
   </footer>
+  <div class="popup">
+    <form class="feedback" action="index.html" method="post">
+      <ul>
+        <li><h2>Мы обязательно вам ответим!</h2></li>
+        <li>
+          <input type="text" name="name" placeholder="Имя Фамилия">
+        </li>
+        <li>
+          <input type="text" name="e-mail" placeholder="email@example.com">
+        </li>
+        <li>
+          <textarea name="massage" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+        </li>
+      </ul>
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
 </body>
 
 </html>
