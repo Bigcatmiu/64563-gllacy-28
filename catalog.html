@@ -54,69 +54,119 @@
   <h1>Сливочное мороженое</h1>
   <section class="catalog">
   <!--Сложная форма-->
-  <!--оснвная часть каталога. Картинки и опсания думаю сделать потом,
-    как только разберусь с сеткой-->
+  <form class="" action="index.html" method="post">
+    <ul>
+      <li>
+        <select class="" name="">
+          <option selected value="по популярности">по популярности</option>
+          <option value="сначала недорогие">сначала недорогие</option>
+          <option value="сначала дорогие">сначала дорогие</option>
+          <option value="по жирности">по жирности</option>
+        </select>
+      </li>
+      <li>
+        <ul>
+          <li>Цена: 100 ₽ – 500 ₽</li>
+          <li>
+            <input type="range" name="" min="100" max="500" value="">
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li>Жирность:</li>
+          <li><input type="radio" name="fat" value="0%">0%</li>
+          <li><input type="radio" name="fat" value="=>10%" checked>до 10%</li>
+          <li><input type="radio" name="fat" value="=>30%">до 30%</li>
+          <li><input type="radio" name="fat" value="=<30%">выше 30%</li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li>Наполнители:</li>
+          <li><input type="checkbox" name="fillers" value="chocolate" checked>шоколадные</li>
+          <li><input type="checkbox" name="fillers" value="sugar-sprinkles" checked>сахарные присыпки</li>
+          <li><input type="checkbox" name="fillers" value="fruits">фрукты</li>
+          <li><input type="checkbox" name="fillers" value="syrups">сиропы</li>
+          <li><input type="checkbox" name="fillers" value="jams">джемы</li>
+        </ul>
+      </li>
+    </ul>
+    <button type="submit" name="button">Применить</button>
+  </form>
 
-    <ulclass="goods">
+    <ul class="goods">
       <li class="product">
         <img src="img/creamy-orange.jpg" alt="Сливочное с апельсиновым джемом" width="267" height="267">
         <p>310 ₽<span>/кг</span></p>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <button type="button" name="button">Быстрый просмотр</button>
       </li>
       <li class="product">
         <img src="img/choco-choco.jpg" alt="Сливочно-кофейное" width="267" height="267">
         <p>380 ₽<span>/кг</span></p>
         <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+        <button type="button" name="button">Быстрый просмотр</button>
       </li>
       <li class="product">
         <img src="img/creamy-strawberry.jpg" alt="Сливочно-клубничное" width="267" height="267">
         <p>355 ₽<span>/кг</span></p>
         <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        <button type="button" name="button">Быстрый просмотр</button>
       </li>
       <li class="product">
         <img src="img/creamy-caramel.jpg" alt="Сливочное крем-брюле" width="267" height="267">
         <p>415 ₽<span>/кг</span></p>
         <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+        <button type="button" name="button">Быстрый просмотр</button>
       </li>
       <li class="product">
         <img src="img/creamy-lingonberry.jpg" alt="Сливочное с брусничным джемом" width="267" height="267">
         <p>325 ₽<span>/кг</span></p>
         <a href="#">Сливочное с брусничным джемом</a>
+        <button type="button" name="button">Быстрый просмотр</button>
       </li>
       <li class="product">
         <img src="img/creamy-blueberry.jpg" alt="Сливочно-черничное" width="267" height="267">
         <p>410 ₽<span>/кг</span></p>
         <a href="#">Сливочно-черничное с цельными ягодами черники </a>
+        <button type="button" name="button">Быстрый просмотр</button>
       </li>
       <li class="product">
         <img src="img/creamy-lemon.jpg" alt="Сливочно-лимонное" width="267" height="267">
         <p>315 ₽<span>/кг</span></p>
         <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+        <button type="button" name="button">Быстрый просмотр</button>
       </li>
       <li class="product">
         <img src="img/creamy-chocosheving.jpg" alt="Сливочное с шоколадной стружкой" width="267" height="267">
         <p>320 ₽<span>/кг</span></p>
         <a href="#">Сливочное с шоколадной стружкой</a>
+        <button type="button" name="button">Быстрый просмотр</button>
       </li>
       <li class="product">
         <img src="img/creamy-vanila.jpg" alt="Сливочно-ванильное с кусочками шоколада" width="267" height="267">
         <p>440 ₽<span>/кг</span></p>
         <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+        <button type="button" name="button">Быстрый просмотр</button>
       </li>
       <li class="product">
         <img src="img/creamy-menthol.jpg" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
         <p>435 ₽<span>/кг</span></p>
         <a href="#">Сливочноe с ментоловым сиропом</a>
+        <button type="button" name="button">Быстрый просмотр</button>
       </li>
       <li class="product">
         <img src="img/creamy-black.jpg" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
         <p>355 ₽<span>/кг</span></p>
         <a href="#">Сливочное с кусочками черного шоколада</a>
+        <button type="button" name="button">Быстрый просмотр</button>
       </li>
       <li class="product">
         <img src="img/creamy-mint.jpg" alt="Сливочное с мятным сиропом" width="267" height="267">
         <p>420 ₽<span>/кг</span></p>
         <a href="#">Сливочное с мятным сиропом</a>
+        <button type="button" name="button">Быстрый просмотр</button>
       </li>
     </ul>
     <ul class="pagination">
