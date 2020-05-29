@@ -1,0 +1,283 @@
+:root {
+  --basic-orange-gradient: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  --basic-box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+  --basic-white: #fff;
+  --basic-black: #323232;
+  --anchor-pink: #FFBC9E;
+}
+
+body {
+  min-width: 1166px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #849D8F;
+  font-style: normal;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+fieldset {
+  border: 0 none;
+}
+
+/*Главное меню*/
+.main-menu {
+  list-style: none;
+}
+
+.main-menu a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  list-style: none;
+  color: var(--basic-white);
+}
+
+.main-menu a:hover {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  list-style: none;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border-radius: 26px;
+}
+
+.menu {
+  display: none;
+}
+
+/*Список кнопок вход, найти, карзина*/
+.list-of-button {
+  list-style: none;
+}
+
+.list-of-button button {
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: var(--basic-white);
+}
+
+.list-of-button button:hover {
+  color: var(--basic-black);
+}
+
+.loupe:hover svg {
+  color: var(--basic-black);
+}
+
+.entrance-icon:hover svg {
+  color: var(--basic-black);
+}
+
+.search {
+  display: none;
+}
+
+.entrance {
+  display: none;
+}
+
+.schedule {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-white);
+}
+
+.phone {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 24px;
+  color: var(--basic-white);
+  text-decoration: none;
+}
+
+/* раздел Приемущества*/
+.about-shop {
+  background-image: url("../img/pattern.jpg");
+}
+
+.about-shop h2 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.advantage {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-black);
+}
+
+/*Раздел Статья*/
+article {
+  background-image: url("../img/strawberry-back.jpg");
+}
+
+article p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-black);
+}
+
+article a {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+/*Раздел рассылка*/
+.mailing {
+  background-image: url("../img/postcard.png");
+}
+
+.mailing p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #F8F7F4;
+}
+
+.mailing button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  background: var(--basic-orange-gradient);
+}
+
+.mailing button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+}
+
+.mailing button:active {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+}
+
+/*Соц сети ссылки*/
+.social-networks {
+  list-style: none;
+}
+
+.social-networks img {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+/*Ссылки из футера*/
+.footer-links li {
+  list-style: none;
+}
+
+.footer-links a {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.footer-links a:hover {
+  color: var(--anchor-pink);
+}
+
+.footer-links a:active {
+  color: var(--anchor-pink);
+}
+
+/*copyright*/
+.academy {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.academy a{
+  font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+color: var(--basic-white);
+}
+
+.academy a:hover {
+  color: var(--anchor-pink);
+}
+
+.academy a:active {
+  color: var(--anchor-pink);
+}
+
+/*popup*/
+.popup {
+  display: none;
+}
+
+/*Хлебные крошки*/
+.breadcrumbs {
+  list-style: url("../img/right-arrow.svg");
+}
+
+.breadcrumbs .main {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-white);
+  list-style: none;
+}
+
+/*Загаоловок в кталоге*/
+h1 {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  color: var(--basic-white);
+}
+
+/*карточки товаров*/
+.goods {
+  list-style: none;
+}
+
+.goods p {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-white);
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.goods span {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  color: var(--basic-white);
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.goods a {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-white);
+}
+
+/*Корзина*/
+.basket {
+  display: none;
+}

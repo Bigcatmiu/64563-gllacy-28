@@ -4,16 +4,19 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
     <a><img src="img/logo.svg" alt="лого" width="154" height="64"></a>
     <nav class="header">
-      <ul class="menu">
+      <ul class="main-menu">
         <li>
           <a href="catalog.html">Каталог</a>
-          <div class="">
+          <div class="menu">
             <ul>
               <li>
                 <a href="#"><strong>Новинки</strong></a>
@@ -41,13 +44,27 @@
     </nav>
     <ul class="list-of-button">
       <li>
-        <button type="submit"><img src="img/loupe.svg" alt="Поиск"></button>
+        <button type="submit" class="loupe">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17"
+            viewBox="0 0 17 17">
+            <path fill="currentColor"
+              d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
+          </svg>
+        </button>
         <form class="search" action="index.html" method="post">
           <input type="search" name="search" value="" placeholder="Крем-брюле">
         </form>
       </li>
       <li>
-        <button type="submit"><img src="img/entrance.svg" alt="Вход">Вход</button>
+        <button type="submit" class="entrance-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19"
+            viewBox="0 0 21 19">
+            <g fill="currentColor">
+              <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
+              <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
+            </g>
+          </svg>
+          Вход</button>
         <form class="entrance" action="index.html" method="post">
           <input type="email" name="login" placeholder="email@example.com">
           <input type="password" name="password" placeholder="......">
@@ -62,89 +79,59 @@
     <a href="tel:+78124502525" class="phone">8 812 450-25-25</a>
   </header>
   <div class="slider">
-    <!--Тут слайдер который пока не знаю как делать-->
     <div class="slide">
       <img src="img/creamy-plomb.png" width="647" height="584" alt="">
-      <h1>Крем-брюле и пломбир с малиновым джемом</h1>
+      <h1 class="slider-heading">Крем-брюле и пломбир с малиновым джемом</h1>
       <a href="#">Дайте оба!</a>
-      <ul>
-        <li>
-          <input type="radio" name="" value="" checked>
-        </li>
-        <li>
-          <input type="radio" name="" value="">
-        </li>
-        <li>
-          <input type="radio" name="" value="">
-        </li>
-      </ul>
     </div>
     <div class="slide">
       <img src="img/choco-lemon.png" width="644" height="582" alt="">
-      <h1>Шоколадный пломбир и лимонный сорбет</h1>
+      <h1 class="slider-heading">Шоколадный пломбир и лимонный сорбет</h1>
       <a href="#">Дайте оба!</a>
-      <ul>
-        <li>
-          <input type="radio" name="" value="">
-        </li>
-        <li>
-          <input type="radio" name="" value="" checked>
-        </li>
-        <li>
-          <input type="radio" name="" value="">
-        </li>
-      </ul>
     </div>
-  </div>
-  <div class="slide">
-    <img src="img/plomb-strawberry.png" width="639" height="582" alt="">
-    <h1>Пломбир с помадкой и клубничный щербет</h1>
-    <a href="#">Дайте оба!</a>
-    <ul>
-      <li>
-        <input type="radio" name="" value="">
-      </li>
-      <li>
-        <input type="radio" name="" value="">
-      </li>
-      <li>
-        <input type="radio" name="" value="" checked>
-      </li>
-    </ul>
-  </div>
-  </div>
+    <div class="slide">
+      <img src="img/plomb-strawberry.png" width="639" height="582" alt="">
+      <h1 class="slider-heading">Пломбир с помадкой и клубничный щербет</h1>
+      <a href="#">Дайте оба!</a>
+    </div>
+    <div class="slide-nav">
+      <input type="radio" name="" value="">
+      <input type="radio" name="" value="">
+      <input type="radio" name="" value="" checked>
+    </div>
   </div>
   <main>
     <section class="bonus">
       <div class="raspberry">
         <h2>Малинка даром!</h2>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку маринового варенья бесплатно.</p>
-        <button>Хочу варенье!</button>
+        <button type="button">Хочу варенье!</button>
       </div>
       <div class="choco">
         <h2>Шоколадки даром!</h2>
-        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+        </p>
         <button>Хочу шоколадки!</button>
       </div>
     </section>
     <ul class="hits">
       <li class="product">
-        <img src="#" alt="Сливочное" width="" height="">
+        <img src="img/hit1.png" alt="Сливочное" width="267" height="267">
         <p>310 ₽<span>/кг</span></p>
         <a>Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
       </li>
       <li class="product">
-        <img src="#" alt="Сливочно-кофейное" width="" height="">
+        <img src="img/hit2.png" alt="Сливочно-кофейное" width="267" height="267">
         <p>380 ₽<span>/кг</span></p>
         <a>Сливочно-кофейное с кусочками шоколада</a>
       </li>
       <li class="product">
-        <img src="#" alt="Сливочно-клубничное" width="" height="">
+        <img src="img/hit3.png" alt="Сливочно-клубничное" width="267" height="267">
         <p>355 ₽<span>/кг</span></p>
         <a>Сливочно-клубничное с присыпкой из белого шоколада</a>
       </li>
       <li class="product">
-        <img src="#" alt="Сливочное крем-брюле" width="" height="">
+        <img src="img/hit4.png" alt="Сливочное крем-брюле" width="267" height="267">
         <p>415 ₽<span>/кг</span></p>
         <a>Сливочное крем-брюле с карамельной подливкой </a>
       </li>
@@ -153,33 +140,40 @@
       <h2>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
       <div class="advantage">
         <img src="img/ice-cream.svg" width="49" height="49">
-        <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+        <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
+          проверенных временем технологий.</p>
       </div>
       <div class="advantage">
         <img src="img/eco.svg" width="49" height="49">
-        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
+          ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
       </div>
       <div class="advantage">
         <img src="img/cow.svg" width="49" height="49">
-        <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+        <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+          связывает долговременное сотрудничество.</p>
       </div>
       <div class="advantage">
         <img src="img/thermometer.svg" width="49" height="49">
-        <p>Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        <p>Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженому
+          растаять в пути и позволяет сохранить превосходный вкус.</p>
       </div>
     </section>
+    <!--Новости-->
     <article>
       <p>Новое в нашем блоге</p>
       <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </article>
-    <!--Тут форма которую сделаю позже-->
+    <!--рассылка-->
     <div class="mailing">
-      <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+      <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
+        Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <form class="mail-form" action="index.html" method="post">
         <input type="email" name="email" value="" placeholder="email@example.com">
         <button type="submit" name="button">Отправить</button>
       </form>
     </div>
+    <!--карта и контакты-->
     <section class="map">
       <img src="img/map-pin.png" alt="map" width="1200" height="430">
       <div class="contacts">
@@ -194,40 +188,47 @@
   </main>
   <footer>
     <ul class="social-networks">
-      <li><a href="#"><img src="img/fb.svg" width="32" height="32">FB</a></li>
-      <li><a href="#"><img src="img/vk.svg" width="32" height="32">VK</a></li>
-      <li><a href="#"><img src="img/instagram.svg" width="32" height="32">Inst</a></li>
-      <li><a href="#"><img src="img/twitter.svg" width="32" height="32">Twit</a></li>
+      <li>
+        <a href="#"><img src="img/fb.svg" width="32" height="32"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/vk.svg" width="32" height="32"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/instagram.svg" width="32" height="32"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/twitter.svg" width="32" height="32"></a>
+      </li>
     </ul>
     <nav class="footer-links">
       <ul class="links">
-        <li><a href="#">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
+        <li>
+          <a href="#">Для поставщиков</a>
+        </li>
+        <li>
+          <a href="#">О производстве</a>
+        </li>
+        <li>
+          <a href="#">Наши документы</a>
+        </li>
+        <li>
+          <a href="#">Экологические стандарты</a>
+        </li>
       </ul>
     </nav>
     <div class="copyright">
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39"></a>
-      <span>Сделано в HTML Academy © 2019</span>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108"
+          height="39"></a>
+      <p class="academy">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
     </div>
   </footer>
   <div class="popup">
     <form class="feedback" action="index.html" method="post">
-      <ul>
-        <li>
-          <h2>Мы обязательно вам ответим!</h2>
-        </li>
-        <li>
-          <input type="text" name="name" placeholder="Имя Фамилия">
-        </li>
-        <li>
-          <input type="text" name="e-mail" placeholder="email@example.com">
-        </li>
-        <li>
-          <textarea name="massage" rows="8" cols="80" placeholder="В свободной форме"></textarea>
-        </li>
-      </ul>
+      <h2>Мы обязательно вам ответим!</h2>
+      <input type="text" name="name" placeholder="Имя Фамилия">
+      <input type="text" name="e-mail" placeholder="email@example.com">
+      <textarea name="massage" rows="8" cols="80" placeholder="В свободной форме"></textarea>
       <button type="submit">Отправить</button>
     </form>
   </div>
